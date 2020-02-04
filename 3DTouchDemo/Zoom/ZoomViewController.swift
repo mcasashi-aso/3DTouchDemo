@@ -83,5 +83,8 @@ class ZoomViewController: UIViewController {
         }
     }
     
+    override var prefersStatusBarHidden: Bool { true }
+    override var prefersHomeIndicatorAutoHidden: Bool { true }
+    
 }
 

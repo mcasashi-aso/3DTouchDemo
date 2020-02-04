@@ -19,6 +19,7 @@
                     </view>
                     <connections>
                         <segue destination="nI3-2Z-84i" kind="presentation" identifier="toZoom" modalPresentationStyle="fullScreen" id="kqA-NL-kUN"/>
+                        <segue destination="l57-nG-tlO" kind="presentation" identifier="toCentextMenu" modalPresentationStyle="fullScreen" id="08f-hB-KdI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fM-px-bSA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -34,6 +35,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FgJ-Sz-1Ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="731" y="127"/>
+        </scene>
+        <!--ContextMenu-->
+        <scene sceneID="bab-vn-nwp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ContextMenu" id="l57-nG-tlO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcq-OA-L0j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="198"/>
         </scene>
     </scenes>
 </document>
