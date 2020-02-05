@@ -25,7 +25,7 @@ struct ConvexButton: View {
                 Text(self.text)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .foregroundColor(self.color.primary(0.5))
+                    .foregroundColor(Color(hex: "3765A9"))
                     .frame(width: 300, height: 125)
                     .contentShape(
                         RoundedRectangle(cornerRadius: 30, style: .continuous)
@@ -34,7 +34,7 @@ struct ConvexButton: View {
                         RoundedRectangle(cornerRadius: 30, style: .continuous)
                             .fill(self.color)
                             .frame(width: 300, height: 125)
-                            .modifier(NMConvexModifier())
+                            .modifier(NMConvexModifier(bottomRightShadowColor: Color(hex: "7CA0D5"), topLeftShadowColor: Color(hex: "EFF4FA")))
                     )
                     .opacity(isH ? 0.8 : 1)
             }

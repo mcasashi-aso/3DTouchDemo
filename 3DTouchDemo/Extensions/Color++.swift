@@ -14,3 +14,24 @@ extension Color {
         return (l > 0.5) ? darker(value) : lighter(value)
     }
 }
+
+struct ColorExtension_Preview: PreviewProvider {
+    
+    static func preview(_ color: Color) -> some View {
+        ZStack {
+            color
+            Text(color.description)
+        }
+    }
+    
+    static var previews: some View {
+        let base = Color(hex: "C1D2EB")
+        return Group {
+            preview(base)
+            preview(base.darker(0.18))
+            preview(base.lighter(0.12))
+            preview(base.primary(0.4))
+        }
+        .previewLayout(.fixed(width: 200, height: 100))
+    }
+}

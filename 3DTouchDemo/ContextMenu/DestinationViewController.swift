@@ -9,6 +9,11 @@
 import UIKit
 
 class DestinationViewController: UIViewController {
+    
+    class func create() -> Self {
+        let sb = UIStoryboard(name: "ContextMenu", bundle: nil)
+        return sb.instantiateViewController(identifier: "destination")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
